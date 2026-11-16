@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Puedo jubilarme?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cielo" aria-hidden="true">
+    <div class="sol"></div>
+    <div class="grilla"></div>
+    <div class="palmera palmera--izq">🌴</div>
+    <div class="palmera palmera--der">🌴</div>
+  </div>
+
+  <main class="contenido">
+    <p class="unidad">Unidad 8 · Conditional statements</p>
+    <h1 aria-label="¿Puedo jubilarme?"><span class="junto"><span class="signo signo--abre" aria-hidden="true">?</span>Puedo</span><br><span class="junto">jubilarme<span class="signo" aria-hidden="true">?</span></span></h1>
+
+    <section class="tarjeta">
+      <div class="selector" role="radiogroup" aria-label="Género">
+        <input type="radio" name="genero" id="mujer" value="mujer" checked>
+        <label for="mujer">Mujer · 60</label>
+        <input type="radio" name="genero" id="hombre" value="hombre">
+        <label for="hombre">Hombre · 65</label>
+      </div>
+
+      <label class="edad" for="edad">Tu edad: <output id="edadValor">35</output> años</label>
+      <input type="range" id="edad" min="18" max="90" value="35">
+
+      <div class="camino">
+        <div class="camino__barra"><div class="camino__relleno" id="relleno"></div></div>
+        <span class="camino__meta" id="meta">60</span>
+      </div>
+
+      <p class="veredicto" id="veredicto"></p>
+      <p class="detalle" id="detalle"></p>
+    </section>
+
+    <section class="consigna">
+      <h2>Probá la consigna con prompt y alert</h2>
+      <div class="botones">
+        <button type="button" data-parte="parte1">Parte 1 · Mujeres</button>
+        <button type="button" data-parte="parte2">Parte 2 · Mujeres y hombres</button>
+        <button type="button" data-parte="bonus">Extra · Un solo if</button>
+      </div>
+      <pre><code>if ((genero === "mujer" &amp;&amp; edad &gt;= 60) || (genero === "hombre" &amp;&amp; edad &gt;= 65)) {
+  alert("Ya estás en edad de jubilarte.");
+} else {
+  alert("Todavía no estás en edad de jubilarte.");
+}</code></pre>
+    </section>
+  </main>
+
+  <div class="confeti" id="confeti" aria-hidden="true"></div>
+
+  <script src="consigna.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
