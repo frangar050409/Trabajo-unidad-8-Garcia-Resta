@@ -131,8 +131,7 @@ h1 {
   }
 }
 
-.tarjeta,
-.consigna {
+.tarjeta {
   background: rgba(26, 11, 46, 0.6);
   border: 1px solid rgba(0, 229, 255, 0.35);
   border-radius: 24px;
@@ -140,11 +139,6 @@ h1 {
   backdrop-filter: blur(14px);
   box-shadow: 0 0 40px rgba(255, 47, 179, 0.25);
   animation: subir 0.8s ease-out both;
-}
-
-.consigna {
-  margin-top: 24px;
-  animation-delay: 0.2s;
 }
 
 @keyframes subir {
@@ -261,49 +255,6 @@ body.jubilado .veredicto {
 .detalle {
   margin: 0;
   opacity: 0.85;
-}
-
-h2 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0 0 16px;
-}
-
-.botones {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-
-.botones button {
-  font: inherit;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: 12px;
-  border: 1px solid var(--cian);
-  background: transparent;
-  color: var(--blanco);
-  cursor: pointer;
-  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.botones button:hover {
-  background: rgba(0, 229, 255, 0.15);
-  box-shadow: 0 0 18px rgba(0, 229, 255, 0.5);
-  transform: translateY(-2px);
-}
-
-pre {
-  text-align: left;
-  margin: 0;
-  padding: 16px;
-  border-radius: 14px;
-  background: rgba(0, 0, 0, 0.45);
-  color: var(--cian);
-  font-size: 0.8rem;
-  overflow-x: auto;
 }
 
 .confeti {

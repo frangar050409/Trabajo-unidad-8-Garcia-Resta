@@ -5,7 +5,6 @@ const meta = document.getElementById("meta");
 const veredicto = document.getElementById("veredicto");
 const detalle = document.getElementById("detalle");
 const confeti = document.getElementById("confeti");
-const consignas = { parte1, parte2, bonus };
 let estabaJubilado = false;
 
 function generoElegido() {
@@ -52,8 +51,5 @@ function actualizar() {
 
 edadInput.addEventListener("input", actualizar);
 document.querySelectorAll('input[name="genero"]').forEach((radio) => radio.addEventListener("change", actualizar));
-document.querySelectorAll("[data-parte]").forEach((boton) => {
-  boton.addEventListener("click", () => consignas[boton.dataset.parte]());
-});
 
 actualizar();
